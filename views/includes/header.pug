@@ -1,0 +1,41 @@
+header
+    nav.navbar.navbar-expand-lg.containerr.pt-3.pb-3.d-flex.justify-content-between.align-items-center
+        a.logo-brand(href="/") 
+            img(src="/img/logo.svg", alt="logo")
+        .menuTab 
+            button.navbar-toggler.border-0(type="button" data-bs-toggle='collapse' data-bs-target='#mainNav')
+                svg(width="30" height="30" viewBox="0 0 30 30" fill="none")
+                    path(d="M0 5h30v2H0zM0 13h30v2H0zM0 21h30v2H0z" fill="#0C0200E5")
+            .collapse.navbar-collapse#mainNav.dropdown-menu-end
+                ul.navbar-nav.navbar-expand-lg.ms-auto 
+                    li.nav-item
+                        a.text-decoration-none(href="")
+                            span Pricing
+                    li.nav-item.dropdown 
+                        button.nav-link(data-bs-toggle='dropdown')
+                            span.me-2 Resources
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L5.26285 5.69583C5.65918 6.1282 6.34082 6.1282 6.73715 5.69583L11.5 0.5" stroke="black" stroke-linecap="round"/>
+                            </svg>
+                        ul.dropdown-menu
+                            li
+                                a.dropdown-item.text-decoration-none(href="") Blog
+                            li
+                                a.dropdown-item.text-decoration-none(href="") Documentation
+                    li.nav-item
+                        a.text-decoration-none(href="")
+                            span FAQs
+                    li.nav-item
+                        a.text-decoration-none(href="")
+                            span Contact us
+                    li.nav-item.dropdown 
+                        button.nav-link(data-bs-toggle='dropdown')
+                            span.me-2 Platforms
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L5.26285 5.69583C5.65918 6.1282 6.34082 6.1282 6.73715 5.69583L11.5 0.5" stroke="black" stroke-linecap="round"/>
+                            </svg>
+                        ul.dropdown-menu
+                            li
+                                a.dropdown-item.text-decoration-none(href="") Shopify
+        .btn.btn-getStarted
+            span Get Started

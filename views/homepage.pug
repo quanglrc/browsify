@@ -1,0 +1,179 @@
+extends layout 
+block title 
+    title Browsify 
+block content
+    section.hero-section
+        .containerr
+            .row 
+                .col-lg-5.right-hero-section.pt-4
+                    .content-hero-section-right
+                        h4 Secure Your Website<br> with 
+                            span.text-highlight Unmatched Power
+                        p Safeguard your site from every threat with Browsify cutting-edge security your business deserves it!
+                        .action-btns.mt-3
+                            .btn.btn-getStarted
+                                span Get started for free
+                            .btn.btn-requestDemo.ms-3
+                                span Request a demo
+                .col-lg-7.left-hero-section
+                    .card.card-info
+                        .ic-dis-en.ps-2.d-flex.flex-row
+                            img(src="/img/ic-disable-12.svg", alt="icon disabled")
+                            img.ps-1(src="/img/ic-enable-12.svg", alt="icon enabled")
+                        .card-visitorID.mt-2
+                            .title-visitorID
+                                span.text-norID Welcome back, visitor ID 
+                                span.text-hl 902304823AHSB12
+                            .time-visits.pt-2
+                                img(src="/img/li.svg", alt="li")
+                                span This is your 
+                                span 2nd
+                                span.ps-1 visits today!
+                        .row.location-ip.g-0
+                            .col-6
+                                .card-ip-location.me-2
+                                    .d-flex.align-items-center
+                                        img(src="/img/ic-location.svg", alt="")
+                                        span.location.ps-1 Location
+                                    .row.mt-3
+                                        .col-6.d-flex.flex-column
+                                            span.label City
+                                            span.text-content.pt-1 Ha Noi
+                                        .col-6.d-flex.flex-column
+                                            span.label Country
+                                            span.text-content.pt-1 VietNam
+                            .col-6
+                                .card-ip-location.ms-2
+                                    .d-flex.align-items-center
+                                        img(src="/img/ic-ip.svg", alt="")
+                                        span.location.ps-1 192.168.1.139:8002
+                                    .row.mt-3
+                                        .col-6.d-flex.flex-column
+                                            span.label Proxy
+                                            .d-flex.align-items-center.pt-1
+                                                img(src="/img/ic-disable.svg", alt="")
+                                                span.text-content.ms-1 Detected
+                                        .col-6.d-flex.flex-column
+                                            span.label VPN
+                                            .d-flex.align-items-center.pt-1
+                                                img(src="/img/ic-enable.svg", alt="")
+                                                span.text-content.ms-1 No
+                        .card-ip-location.d-flex.justify-content-between
+                            .browser.d-flex.flex-column 
+                                span Browser
+                                span.text-content Chrome on Windows
+                            .automation
+                                span Automation
+                                .d-flex.align-items-center 
+                                    img(src="/img/ic-enable.svg", alt="")
+                                    span.text-content.ms-1 No
+                            .browser-fingerprint
+                                span Browser Fingerprint
+                                .d-flex.align-items-center.pt-1
+                                    img(src="/img/ic-enable.svg", alt="")
+                                    span.text-content.ms-1 Real
+                            .incognito
+                                span Incognito
+                                .d-flex.align-items-center 
+                                    img(src="/img/ic-disable.svg", alt="")
+                                    span.text-content.ms-1 Detected
+    .card-cta.mt-3
+        .row.containerr
+            .col-4.block-fraud
+                img(src="/img/ic-block-fraud.svg", alt="")
+                .content-cta.d-flex.flex-column
+                    span.content-cta-title Block fraud instantly
+                    span.content-cta-text Detect and stop high-risk users before they can place an order. Prevent chargebacks, bot attacks, and stolen credit card fraud effortlessly.
+            .col-4.fingerprint
+                img(src="/img/ic-fingerprint.svg", alt="")
+                .content-cta.d-flex.flex-column 
+                    span.content-cta-title Powerful browser fingerprinting
+                    span.content-cta-text Unmask fraudsters hiding behind VPNs and proxies. Our technology detects multiple accounts & suspicious behavior in real time.
+            .col-4.security
+                img(src="/img/ic-security.svg", alt="")
+                .content-cta.d-flex.flex-column
+                    span.content-cta-title Easy, automated protection
+                    span.content-cta-text Set it and forget it. Browsify runs in the background, securing your store 24/7 without slowing it down.
+    .content-QA.containerr
+        .title-content-QA.text-center.pt-5
+            h4 Powerful Features built to secure<br>your 
+                span.text-highlight Online Business
+            p Protect your store, identify threats, and take control with<br>intelligent tools for fraud detection, traffic filtering, and real-<br>time insights - all in one platform.
+        .accordion-1.pt-5.d-flex.justify-content-between
+            .right-content-QA1.col-5
+                .title-accordion-1
+                    h4.title-accordion Security
+                    p.text-content-accordion Safeguard your website with Browsify robust security features designed to block threats and protect your data effectively.
+                .accordion#faqAccordion1
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false")
+                                | Blocking Options
+                        #faq1.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Customize rules to block malicious traffic and keep your site safe, allowing you to tailor defenses based on your specific needs and security priorities.
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false")
+                                | Auto DDoS Protection
+                        #faq2.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Automatically shield your site from DDoS attacks in real-time, ensuring uninterrupted access for legitimate users while filtering out harmful traffic effortlessly.
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false")
+                                | Anti-Crawling (Custom Rules)
+                        #faq3.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Prevent content scraping with tailored anti-crawling settings, giving you the flexibility to set rules that protect your unique content from unauthorized access or theft.
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false")
+                                | Data Theft Prevention
+                        #faq4.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Stop unauthorized data access to secure your sensitive information, adding an extra layer of protection to safeguard your business-critical assets from breaches.
+                a.text-decoration-none.btn-getStarted.ms-4(href="")
+                    span Get started for free
+            .left-content-QA1.col-7
+                img.img-QA.pt-4(src="/img/accordion-security.svg", alt="")
+
+        
+        .accordion-1.pt-5.d-flex.justify-content-between
+            .right-content-QA1.col-7
+                img.img-QA.pt-4(src="/img/clickFraud.svg", alt="")
+            .left-content-QA1.col-5.me-4
+                .title-accordion-1
+                    h4.title-accordion Click Fraud Protection
+                    p.text-content-accordionProtect your ad campaigns with Browsify's advanced click fraud prevention tools.<br>Supports integration with Google Ads, Meta Ads, and Bing Ads for comprehensive coverage.
+                .accordion#faqAccordion1
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false")
+                                | Analytics
+                        #faq5.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Gain insights into ad performance and fraud patterns, helping you optimize your strategies and make data-driven decisions to improve effectiveness.
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false")
+                                | Clicks
+                        #faq6.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Track and analyze every click to detect anomalies, giving you the power to identify and address suspicious behavior before it impacts your budget.
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false")
+                                | Report
+                        #faq7.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Get detailed reports on fraud incidents, offering valuable data to understand trends and strengthen your defenses over time.
+                    .accordion-item.border-0
+                        .accordion-header
+                            .btn.accordion-button.collapsed.fw-bold.px-0.text-ques(type= "button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false")
+                                | Blocking Rules
+                        #faq8.accordion-collapse.collapse
+                            .accordion-body.px-0.text-muted.text-ans
+                                | Set custom rules to block fraudulent clicks, allowing you to fine-tune your protection based on the specific threats you encounter.
+                a.text-decoration-none.btn-getStarted.ms-4(href="")
+                    span Get started for free

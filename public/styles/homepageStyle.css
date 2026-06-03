@@ -388,6 +388,10 @@ body {
     gap: 20px;
 }
 
+.accordion-1{
+    margin-top: 100px;
+}
+
 .title-accordion-1{
     max-width: 474px;
     margin-left: 32px;
@@ -400,7 +404,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 #faqAccordion1 .accordion-item {
@@ -408,6 +412,7 @@ body {
     background-color: transparent !important;
     border-radius: 20px !important; 
     transition: all 0.3s ease;
+    max-width: 532px;
 }
 
 #faqAccordion1 .accordion-item:has(.accordion-button:not(.collapsed)) {
@@ -456,4 +461,57 @@ body {
 .img-QA{
     max-width: 550px;
     height: auto;
+}
+
+.getStarted-margin{
+    margin-left: 32px;
+}
+
+.img-QA2{
+    padding-top: 100px;
+}
+
+/* view more features */
+.view-more-feature{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #FFEDE8 0%, rgba(255, 237, 232, 0) 100%);
+    border-radius: 25px;
+    position: relative;
+    margin-top: 110px;
+}
+
+.view-more-feature::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    padding: 1px;
+    background: linear-gradient(180deg, #FF4B1E 0%, rgba(234, 227, 225, 0) 83.11%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+}
+
+.view-more-feature h3{
+    color: #0C0200;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+.view-more-feature p{
+    color: #321D18;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* unlock power */
+.unlock-power{
+    background-image: url('/img/unlock-power.png');
+    background-size: cover;
+    background-position: center;
 }

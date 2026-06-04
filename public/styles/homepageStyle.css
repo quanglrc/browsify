@@ -511,7 +511,213 @@ body {
 
 /* unlock power */
 .unlock-power{
-    background-image: url('/img/unlock-power.png');
+    background-image: url('/img/bg-unlock-power.png');
     background-size: cover;
     background-position: center;
+    margin-top: 80px;
+    padding: 100px 0;
+}
+
+.unlock-power h4{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.unlock-power p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.QA-visitorID{
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 170px;
+}
+
+.content-visitorID{
+    gap: 16px;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+.content-visitorID h4{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content-visitorID p{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.visitorID-work{
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.list-answer{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.content-vtID-work{
+    padding-top: 48px;
+}
+
+.with-without-visitorID{
+    margin-top: 100px;
+}
+
+.answer-without-vtID h5{
+    color: #FF4B1E;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.answer-without-vtID p{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 484px;
+    line-height: 130%;
+}
+
+.content-without-vtID{
+    padding-left: 80px;
+}
+
+.content-without-vtID h4{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* platform section */
+
+.platform-section{
+    display: flex;
+    margin-top: 80px;
+}
+
+.platform-section h4{
+    color: #0C0200;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.platform-section p{
+    color: #4D4D4D;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 842px;
+    line-height: 130%;
+}
+
+.icon-4apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 10px;
+    border: 2px solid #E9E9E9;
+}
+
+.icon-4apps.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.icon-4apps.active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    border: none;
+    padding: 2px; /* độ dày viền */
+    background: linear-gradient(180deg, #FF7D5D 0%, #FF4B1E 70%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+}
+
+.explore-for-shopify{
+    border-radius: 40px;
+    padding-top: 20px;
+    position: relative;
+    background: linear-gradient(180deg, #FDFBFB 0%, #F7EEED 100%);
+}
+
+.explore-for-shopify::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 1px; /* độ dày viền */
+    background: linear-gradient(180deg, #FF4B1E 0%, rgba(234, 227, 225, 0) 70%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+}
+
+.explore-for-shopify p{
+    color: #4D4D4D;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 250px;
+    line-height: 130%;
+}
+
+.btn-explore {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: radial-gradient(74.83% 80.77% at 18.62% 19.23%, #FF9176 0%, #FF4B1E 100%) ;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 5.8px 0px #FF4B1E26;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* security dashboard section */
+.content-security-dashboard h4{
+    font-size: 36px;
+    font-weight: 700;
+    color: #0C0200;
+}
+
+.content-security-dashboard p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #4D4D4D;
+    line-height: 130%;
+}
+
+.text-benifit{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #4D4D4D;
+    font-weight: 400;
 }

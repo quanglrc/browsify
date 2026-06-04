@@ -714,10 +714,29 @@ body {
     line-height: 130%;
 }
 
+.security-dashboard{
+    padding-left: 80px;
+}
+
 .text-benifit{
     display: flex;
     align-items: center;
     font-size: 15px;
     color: #4D4D4D;
     font-weight: 400;
+}
+
+.security-dashboard{
+    border-radius: 15px;
+    padding: 16px;
+    box-shadow: 0px 3px 20px 2px #00000026;
+
+}
+
+.card-header-dashboard{
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EAE3E1;
+    background: #0C0200;
 }

@@ -298,14 +298,14 @@ block content
                     img(src="/img/check-stick.svg", alt="")
                     span.ms-2 Detailed security reports and analytics
         .security-dashboard.col-7
-            .card-dashboard
-                .card-header-dashboard.d-flex.align-items-center.justify-content-between
+            .card-dashboard.card
+                .card-header-dashboard.card-header.d-flex.align-items-center.justify-content-between
                     .title-dashboard.d-flex.align-items-center
                         img(src="/img/logo-dashboard.svg", alt="Security Dashboard")
                         span.text-dashboard.ms-2 Browsify Security Dashboard
                     .badge-live
                         span LIVE
-                .card-body-dashboard
+                .card-body-dashboard.card-body
                     .security-alert.d-flex.flex-column
                         .alert-title.d-flex.align-items-center
                             img(src="/img/ic-alert.svg", alt="alert")
@@ -325,17 +325,10 @@ block content
                                 span.stat-sub.mt-1 All systems operational
                     .traffic-overview.mt-3
                         .traffic-header.d-flex.justify-content-between.align-items-center
-                            span.traffic-title.fw-bold Traffic Overview
+                            span.traffic-title Traffic Overview
                             span.traffic-time.text-muted Last 24 hours
-                        .traffic-legend.d-flex.mt-2
-                            .legend-item.d-flex.align-items-center
-                                span.dot.dot-attack
-                                span.ms-1 Attacks Detected: 8
-                            .legend-item.d-flex.align-items-center.ms-3
-                                span.dot.dot-mitigate
-                                span.ms-1 Attacks Mitigated: 10
-                        .traffic-chart.mt-2
-                            img(src="/img/dashboard-chart.svg", alt="traffic chart")
+                        .chart-wrapper
+                            canvas#trafficChart(role="img" aria-label="Traffic overview chart")
                     .dashboard-actions.mt-3.d-flex.align-items-center
                         a.btn.btn-view-details(href="")
                             span View Details
@@ -343,8 +336,7 @@ block content
                             span Configure Rules
     .pricing-section.containerr
         .pricing-header.text-center
-            h4 Plan that tailored to 
-                span.text-highlight your need
+            h4 Plan that tailored to your need
             p.text-muted Based on the request
 
         //- Toggle Annually / Monthly
@@ -365,15 +357,15 @@ block content
                     max="6"
                     value="1"
                     step="1"
-                )
-            .slider-labels.d-flex.justify-content-between.mt-2
-                span 10K
-                span 20K
-                span 50K
-                span 100K
-                span 200K
-                span 500K
-                span 1M+
+                )   
+                .slider-labels.mt-2
+                    span 10K
+                    span 20K
+                    span 50K
+                    span 100K
+                    span 200K
+                    span 500K
+                    span 1M+
 
         //- Pricing card + benefits
         .pricing-content.row.mt-5.align-items-start
@@ -473,3 +465,9 @@ block content
                                         li Webhook Notifications
                                         li Priority Support
                                         li SLA Guarantee
+
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js")
+    script(src="/js/traffic-chart.js")
+    script(src="/js/pricing.js")

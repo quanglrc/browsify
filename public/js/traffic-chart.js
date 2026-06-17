@@ -25,8 +25,8 @@ const labels = ['0h','1h','2h','3h','4h','5h','6h','7h',
                  '8h','9h','10h','11h','12h','13h','14h','15h',
                  '16h','17h','18h','19h','20h','21h','22h','23h'];
 
-const detected  = [3.5,3.8,3.6,3.2,3.0,2.8,2.5,2.9,3.8,5.2,6.8,8.0,8.5,8.2,7.8,7.6,7.9,8.1,8.2,8.0,7.8,7.6,7.9,8.0];
-const mitigated = [1.0,1.2,1.6,2.1,2.9,3.7,5.2,6.8,8.2,9.6,10, 9.5,8.5,7.4,6.5,6.0,5.5,5.0,4.6,4.2,3.9,3.6,3.3,3.5];
+const detected  = [4, 4, 4, 3, 3, 3, 3, 3, 4, 5, 7, 8, 9, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8];
+const mitigated = [1, 1, 2, 2, 3, 4, 5, 7, 8, 10, 10, 10, 9, 7, 7, 6, 6, 5, 5, 4, 4, 4, 3, 4];
 
 new Chart(document.getElementById('trafficChart'), {
   type: 'line',
@@ -39,7 +39,8 @@ new Chart(document.getElementById('trafficChart'), {
         data: detected,
         borderColor: '#1aae5a',
         backgroundColor: 'transparent',
-        tension: 0.45,
+        tension: 0.4,
+        cubicInterpolationMode: 'monotone',
         borderWidth: 2.5,
         pointRadius: 0,
         pointHoverRadius: 5,
@@ -52,7 +53,8 @@ new Chart(document.getElementById('trafficChart'), {
         data: mitigated,
         borderColor: '#ff5a1f',
         backgroundColor: 'transparent',
-        tension: 0.45,
+        tension: 0.4,
+        cubicInterpolationMode: 'monotone',
         borderWidth: 2.5,
         pointRadius: 0,
         pointHoverRadius: 5,
@@ -79,7 +81,7 @@ new Chart(document.getElementById('trafficChart'), {
         bodySpacing: 10,
         callbacks: {
           title: () => '',
-          label: (ctx) => `${ctx.dataset.label}: ${Math.round(ctx.parsed.y)}`,
+          label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y}`,
           labelTextColor: (ctx) => ctx.dataset.borderColor,
         }
       }

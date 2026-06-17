@@ -2,20 +2,20 @@ extends layout
 block title 
     title Browsify 
 block content
-    section.hero-section
+    section.infor-section
         .containerr
             .row 
-                .col-lg-5.right-hero-section.pt-4
-                    .content-hero-section-right
+                .col-lg-5.right-infor-section.pt-4
+                    .content-infor-section-right
                         h4 Secure Your Website<br> with 
                             span.text-highlight Unmatched Power
                         p Safeguard your site from every threat with Browsify cutting-edge security your business deserves it!
                         .action-btns.mt-3
-                            .btn.btn-getStarted
+                            a.btn-getStarted.text-decoration-none(href="")
                                 span Get started for free
-                            .btn.btn-requestDemo.ms-3
+                            a.btn-requestDemo.ms-3.text-decoration-none(href="") 
                                 span Request a demo
-                .col-lg-7.left-hero-section
+                .col-lg-7.left-infor-section
                     .card.card-info
                         .ic-dis-en.ps-2.d-flex.flex-row
                             img(src="/img/ic-disable-12.svg", alt="icon disabled")
@@ -58,7 +58,7 @@ block content
                                             .d-flex.align-items-center.pt-1
                                                 img(src="/img/ic-enable.svg", alt="")
                                                 span.text-content.ms-1 No
-                        .card-ip-location.d-flex.justify-content-between
+                        .card-ip-location.d-flex.justify-content-between.flex-row
                             .browser.d-flex.flex-column 
                                 span Browser
                                 span.text-content Chrome on Windows
@@ -369,9 +369,9 @@ block content
 
         //- Pricing card + benefits
         .pricing-content.row.mt-5.align-items-start
-            .col-lg-5
+            .col-lg-7
                 .pricing-card
-                    .badge-billing Annually with 90% OFF
+                    .badge-billing Annually with 30% OFF
                     .price-display.mt-3
                         span.price-amount $29
                         span.price-period /mo.
@@ -379,33 +379,33 @@ block content
                     a.btn-start-trial.mt-3(href="")
                         span Start Free trial
 
-            .col-lg-7
+            .col-lg-5
                 .benefits-section
                     p.benefits-title Benefit including:
                     ul.benefits-list
                         li
-                            img(src="/img/check-stick.svg" alt="")
+                            img(src="/img/like-tick.svg" alt="")
                             span Blocking Options
                         li
-                            img(src="/img/check-stick.svg" alt="")
+                            img(src="/img/like-tick.svg" alt="")
                             span Auto DDoS Protection
                         li
-                            img(src="/img/check-stick.svg" alt="")
+                            img(src="/img/like-tick.svg" alt="")
                             span Anti-Crawling
                         li
-                            img(src="/img/check-stick.svg" alt="")
+                            img(src="/img/like-tick.svg" alt="")
                             span Data Theft Prevention
                         li
-                            img(src="/img/check-stick.svg" alt="")
+                            img(src="/img/like-tick.svg" alt="")
                             span Click Fraud Protection
                         li
-                            img(src="/img/check-stick.svg" alt="")
+                            img(src="/img/like-tick.svg" alt="")
                             span Threat Reports
                     a.see-all-features(href="") See all features
 
         .pricing-footer.text-center.mt-4
-            p.text-muted Complete your payment through the platform, or contact 
-                a.text-decoration-none.text-highlight(href="") our support
+            p.text-muted Complete your payment through the platform, or contact<br>
+                a.text-highlight(href="") our support
                 |  for a custom plan.
 
     //- Enterprise accordion
@@ -423,51 +423,188 @@ block content
                 #enterpriseFeatures.accordion-collapse.collapse
                     .accordion-body
                         .row.g-3
-                            .col-md-4
+                            .col-md-6
                                 .feature-group
-                                    h6.feature-group-title Security
                                     ul.feature-list
-                                        li Blocking Options
-                                        li Auto DDoS Protection
-                                        li Anti-Crawling (Custom Rules)
-                                        li Data Theft Prevention
-                                        li IP Reputation Filtering
-                                        li Bot Detection
-                                        li Rate Limiting
-                                        li Geo-blocking
-                                        li Two-Factor Authentication
-                                        li SSL/TLS Monitoring
-                            .col-md-4
-                                .feature-group
-                                    h6.feature-group-title Click Fraud Protection
-                                    ul.feature-list
-                                        li Analytics Dashboard
-                                        li Click Tracking
-                                        li Fraud Reports
-                                        li Blocking Rules
-                                        li Google Ads Integration
-                                        li Meta Ads Integration
-                                        li Bing Ads Integration
-                                        li Real-time Alerts
-                                        li IP Blacklisting
-                                        li Behavior Analysis
-                            .col-md-4
-                                .feature-group
-                                    h6.feature-group-title Reports & Visitor ID
-                                    ul.feature-list
-                                        li Threat Reports
-                                        li Traffic Analytics
-                                        li Export PDF/CSV
-                                        li Visitor ID Tracking
-                                        li Session Replay
-                                        li Custom Dashboards
-                                        li API Access
-                                        li Webhook Notifications
-                                        li Priority Support
-                                        li SLA Guarantee
-
-
-
+                                        li 
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Blocking Options
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Anti-Crawling Protection
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Click Fraud Protection for Meta Ads
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Intelligent IP Blocking
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Form Spam Protection
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Rate Limiting
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span SQL Injection Protection
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span 24/7 Security Monitoring
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Access Control Lists
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Zero-day Vulnerability Protection
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span DDoS Protection
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span DNS Integration
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Click Fraud Protection for Bing Ads
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Custom Security Rules
+                                        li
+                                            img.check-icon(src="/img/like-tick.svg", alt="")
+                                            span Content Scraping Prevention
+                            .col-md-6
+                                ul.feature-list
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Brute Force Attack Protection
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span CSRF Protection
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Detailed Security Reports
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Security Audit Logs
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Multi-domain Support
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Data Theft Prevention
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Click Fraud Protection for Google Ads
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Real-time Threat Monitoring
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Bot Detection & Blocking
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Malicious Traffic Filtering
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span XSS Attack Prevention
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Web Application Firewall
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span API Protection
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span HTTPS Enforcement
+                                    li
+                                        img.check-icon(src="/img/like-tick.svg", alt="")
+                                        span Enterprise-grade SLA
+    section.testimonials-section.containerr.text-center
+        h2.testimonials-title Real stories from Shopify merchants
+        p.testimonials-desc See how Browsify helps merchants protect their stores from fraud and suspicious<br> activities with advanced tracking technology.
+        .borderline
+        .trusted-group
+            span Trusted by:
+            .avatar-stack.mt-2.d-flex.justify-content-center
+                .person-review(data-index='0')
+                    img.me-2(src="/img/sarahM.svg", alt="")
+                    .avatar-name-tag Sarah M.
+                .person-review(data-index='1')
+                    img.me-2(src="/img/priyaK.svg", alt="")
+                    .avatar-name-tag Priya K.
+                .person-review(data-index='2')
+                    img.me-2(src="/img/linaW.svg", alt="")
+                    .avatar-name-tag Lina W.
+                .person-review(data-index='3')
+                    img.me-2(src="/img/ethanJ.svg", alt="")
+                    .avatar-name-tag Ethan J.
+                .person-review(data-index='4')
+                    img(src="/img/oliviaK.svg", alt="")
+                    .avatar-name-tag Olivia K.
+        .testimonials-slider-wrapper.mt-5
+            .focus-frame
+                .corner.tl
+                .corner.tr
+                .corner.bl
+                .corner.br
+            .testimonials-track#testimonialsTrack
+                .testimonial-card
+                    p "With Browsify, my Shopify site is finally secure. Their bot detection blocked fake traffic, and I’ve saved so much on chargebacks. It works seamlessly across platforms—a must for ecommerce!"
+                    .d-flex.justify-content-between.align-items-center
+                        .infor-reviewer.d-flex.align-items-center.flex-shrink-0
+                            img(src="/img/sarahM.svg", alt="" width="48px", height="48px")
+                            .name.ms-2.d-flex.flex-column.text-start
+                                span.name-reviewer Sarah M.
+                                .desc Fashion Boutique, Shopify Plus
+                        span.star ★★★★★
+                .testimonial-card
+                    p "Browsify’s fraud prevention is top-notch for my flower shop. It caught suspicious payments right away, and the real-time IP tracking is amazing. My transactions have never felt safer."
+                    .d-flex.justify-content-between.align-items-center
+                        .infor-reviewer.flex-shrink-0.d-flex.align-items-center
+                            img(src="/img/priyaK.svg", alt="" width="48px", height="48px")
+                            .name.ms-2.d-flex.flex-column.text-start
+                                span.name-reviewer Priya K.
+                                .desc Store Owner
+                        span.star ★★★★★
+                .testimonial-card
+                    p "With Browsify, my Shopify site is finally secure. Their bot detection blocked fake traffic, and I’ve saved so much on chargebacks. It works seamlessly across platforms—a must for ecommerce!"
+                    .d-flex.justify-content-between.align-items-center
+                        .infor-reviewer.flex-shrink-0.d-flex.align-items-center
+                            img(src="/img/linaW.svg", alt="" width="48px", height="48px")
+                            .name.ms-2.d-flex.flex-column.text-start
+                                span.name-reviewer Lina W.
+                                .desc Shopify Merchant
+                        span.star ★★★★★
+                .testimonial-card
+                    p "Browsify protected my store from a massive DDoS attack during our biggest sale. Their system is easy to integrate and keeps my customer data secure. I’m so glad I found them!"
+                    .d-flex.justify-content-between.align-items-center
+                        .infor-reviewer.flex-shrink-0.d-flex.align-items-center
+                            img(src="/img/ethanJ.svg", alt="" width="48px", height="48px")
+                            .name.ms-2.d-flex.flex-column.text-start
+                                span.name-reviewer Ethan J.
+                                .desc Seller
+                        span.star ★★★★★
+                .testimonial-card
+                    p "With Browsify, my Shopify site is finally secure. Their bot detection blocked fake traffic, and I’ve saved so much on chargebacks. It works seamlessly across platforms—a must for ecommerce!"
+                    .d-flex.justify-content-between.align-items-center
+                        .infor-reviewer.flex-shrink-0.d-flex.align-items-center
+                            img(src="/img/oliviaK.svg", alt="" width="48px", height="48px")
+                            .name.ms-2.d-flex.flex-column.text-start
+                                span.name-reviewer Olivia K.
+                                .desc Skincare & Beauty Store
+                        span.star ★★★★★
+    .protection.containerr
+        .div
+            h2.title-protection Shield Your Website,<br> Secure Your Future.
+            .group-btns.d-flex.pt-3
+                a.btn-getStarted.text-decoration-none(href="") 
+                    span Get started for free
+                a.btn-requestDemo.ms-3.text-decoration-none(href="") 
+                    span Request a demo
+        img(src="/img/img-hero-section.svg", alt="")
+    
+    
+    
     script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js")
     script(src="/js/traffic-chart.js")
     script(src="/js/pricing.js")
+    script(src="/js/testiminal.js") 

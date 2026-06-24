@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    padding: 10px 15px;
 }
 
 .navbar-toggler:focus{
@@ -42,8 +43,8 @@ body {
 @media (max-width: 991.98px){
     .navbar-nav{
         gap: 8px;
+        padding: 10px 15px;
         align-items: flex-start;
-        padding-top: 10px 15px;
     }
 }
 
@@ -68,18 +69,19 @@ body {
         background: white;
         border-radius: 12px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-        min-width: 220px;
         width: auto;
         max-width: 30%;
+
     }
 
     .navbar-collapse .nav-link,
     .navbar-collapse .btn {
         font-size: 15px;
-        padding: 10px 20px;
+        padding: 8px 0;
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .navbar-collapse .dropdown-menu {
@@ -101,6 +103,7 @@ body {
         padding: 12px 8px;
         border-bottom: 1px solid #f0f0f0;
         border-radius: 8px;
+        text-align: start;
     }
 
     .navbar-collapse .dropdown-item:last-child {
@@ -136,12 +139,13 @@ body {
     flex-wrap: wrap;
     }
 
+    .btn.btn-getStarted{
+        padding: 10px 15px;
+    }
     
 }
 
-.navbar-collapse .nav-item a{
-    padding: 10px 20px;
-}
+
 
 
 /* footer */
@@ -210,9 +214,7 @@ body {
 
 
 
-.content-infor-section-right{
-    max-width: 449px;
-}
+
 
 .right-infor-section h4{
     color: #321D18;

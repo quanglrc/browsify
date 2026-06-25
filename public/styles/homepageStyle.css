@@ -29,14 +29,15 @@ body {
     background: radial-gradient(74.83% 80.77% at 18.62% 19.23%, #FF9176 0%, #FF4B1E 100%);
     box-shadow: 0px 4px 5.8px 0px #FF4B1E26;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     gap: 10px;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 500;
-    height: 39px;
     display: flex;
     align-items: center;
+    border: none;
+    height: ;
 }
 
 
@@ -47,14 +48,28 @@ body {
 }
 
 @media (min-width: 991.98px){
+
     .content-infor-section-right h4 {
         max-width: 427px;
     }
 }
 
 @media (max-width: 991.98px) {
+    .infor-section{
+        padding: 40px 0;
+    }
+
+    .content-infor-section-right h4{
+        font-size: 35px;
+    }
+
+    .content-infor-section-right p{
+        font-size: 18px;
+    }
+
     .navbar {
         position: relative;
+        flex-wrap: wrap;
         gap: 8px;
         padding: 10px 15px;
         align-items: flex-start;
@@ -70,7 +85,9 @@ body {
         border-radius: 12px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         width: auto;
-        max-width: 30%;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
 
     }
 
@@ -103,7 +120,8 @@ body {
         padding: 12px 8px;
         border-bottom: 1px solid #f0f0f0;
         border-radius: 8px;
-        text-align: start;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .navbar-collapse .dropdown-item:last-child {
@@ -135,10 +153,6 @@ body {
         padding: 24px 0
     }
 
-    .navbar {
-    flex-wrap: wrap;
-    }
-
     .btn.btn-getStarted{
         padding: 10px 15px;
     }
@@ -149,11 +163,23 @@ body {
     
 }
 
+.action-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media (min-width: 510px) {
     .content-infor-section-right .action-btns{
+        display: flex;
+        flex-direction: row;
         width: fit-content;
         border-radius: 50px;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    .action-btns button{
+        width: auto;
     }
 }
 
@@ -224,10 +250,6 @@ body {
     padding: 80px 0;
 }
 
-
-
-
-
 .right-infor-section h4{
     color: #321D18;
     font-size: 36px;
@@ -244,8 +266,22 @@ body {
     font-weight: 400;
 }
 
+@media (max-width: 991.98px) {
+    .infor-section{
+        padding: 30px 0;
+    }
+
+    .content-infor-section-right h4{
+        font-size: 35px;
+    }
+
+    .content-infor-section-right p{
+        font-size: 18px;
+    }
+}
+
 .btn-requestDemo{
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 20px;
     border: 1px solid #FF4B1E;
     color: #FF4B1E;
@@ -255,6 +291,7 @@ body {
     align-items: center;
     height: 39px;
     gap: 10px;
+    background-color: transparent;
 }
 
 .btn-requestDemo:hover{
@@ -263,14 +300,13 @@ body {
     border: none;
 }
 
-.action-btns{
+.action-btns button{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     gap: 5px;
-    width: 100%;
 }
 
 /* left-infor-section */
@@ -289,7 +325,8 @@ body {
     padding: 16px;
 }
 
-.text-nor{
+
+.text-norID{
     font-size: 18px;
     color: #54433F;
     font-weight: 500;
@@ -311,12 +348,37 @@ body {
     padding: 16px;
     background: #F9F9F9;
     border-radius: 15px;
+    width: 100%;
 }
 
 .location{
     font-size: 15px;
     font-weight: 500;
     color: #321D18;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+.card-coming-box{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    padding: 16px;
+    background: #F9F9F9;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .card-coming-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .card-coming-box{
+        grid-template-columns: 1fr;
+    }
 }
 
 .label{
@@ -341,6 +403,21 @@ body {
     height: 10px;
 }
 
+@media (max-width: 578px) {
+    .text-norID{
+        font-size: 16px;
+    }
+
+    .text-hl{
+        font-size: 17px;
+    }
+
+    .time-visits{
+        font-size: 15px;
+    }
+}
+
+
 /* CTA */
 .content-cta{
     max-width: 366px;
@@ -348,8 +425,15 @@ body {
 .card-cta{
     padding: clamp(30px, 3vw, 60px) 0;
     background: #F9F9F9; 
-    gap: 40px;
 }
+
+@media (max-width: 578px) {
+    .card-cta-content{
+        gap: 20px;
+
+    }
+}
+
 
 .content-cta-title{
     color: #0C0200;

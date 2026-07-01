@@ -474,47 +474,45 @@ body {
     font-weight: 400;
 }
 
-.right-content-QA1{
+.have-accordion{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(14px, 3vw, 20px);
 }
 
 .accordion-1{
-    margin-top: 100px;
+    margin-top: clamp(30px, 80px, 125px);
 }
 
 .title-accordion-1{
-    max-width: 474px;
     margin-left: 32px;
     display: flex;
     justify-content: center;
     flex-direction: column; 
 }
 
-#faqAccordion1 {
+.accordion-QA{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: clamp(10px, 2vw, 16px);
+    margin-bottom: clamp(10px, 3vw, 16px);
 }
 
-#faqAccordion1 .accordion-item {
+.accordion .accordion-item {
     border: 1px solid transparent !important; 
     background-color: transparent !important;
     border-radius: 20px !important; 
     transition: all 0.3s ease;
-    max-width: 532px;
 }
 
-#faqAccordion1 .accordion-item:has(.accordion-button:not(.collapsed)) {
+.accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
     background-color: #FFFFFF !important;
     border-color: #FF4B1E !important; 
     box-shadow: 0px 10px 30px rgba(255, 75, 30, 0.08); 
 }
 
 
-#faqAccordion1 .accordion-button {
+.accordion .accordion-button {
     background-color: transparent !important;
     color: #0C0200 !important;
     font-size: 20px;
@@ -526,7 +524,7 @@ body {
     padding: 16px 16px 20px 32px !important;
 }
 
-#faqAccordion1 .accordion-button::after {
+.accordion .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
     background-size: 1.25rem;
     transform: rotate(-180deg);
@@ -537,30 +535,69 @@ body {
     padding: 0 !important;
 }
 
-#faqAccordion1 .accordion-button:not(.collapsed)::after {
+.accordion .accordion-button:not(.collapsed)::after {
     transform: rotate(0deg);
 }
 
-#faqAccordion1 .accordion-body {
+.accordion .accordion-body {
     color: #54433F !important;
     font-size: 15px;
     line-height: 1.6;
     font-weight: 400;
-    max-width: 474px;
     padding: 0 16px 20px 32px !important;
 }
 
 .img-QA{
-    max-width: 550px;
+    width: 100%;
     height: auto;
 }
 
 .getStarted-margin{
-    margin-left: 32px;
+    margin-left: clamp(20px, 3vw, 32px);
 }
 
-.img-QA2{
-    padding-top: 100px;
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 767px) {
+    .title-accordion {
+        font-size: 28px;
+    }
+
+    .title-accordion-1 {
+        font-size: 26px;
+        margin-left: 24px;
+    }
+
+    .have-accordion{
+        margin-top: 30px;
+    }
+
+    .accordion .accordion-button {
+        font-size: 18px;
+        padding: 12px 12px 16px 24px !important;
+    }
+}
+
+@media(max-width: 575px) {
+    .title-accordion {
+        font-size: 26px;
+    }
+
+    .title-accordion-1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .have-accordion{
+        margin-top: 20px;
+    }
+
+    .accordion .accordion-button {
+        font-size: 16px;
+        padding: 10px 10px 14px 20px !important;
+    }
 }
 
 /* view more features */
@@ -570,7 +607,9 @@ body {
     background: linear-gradient(180deg, #FFEDE8 0%, rgba(255, 237, 232, 0) 100%);
     border-radius: 25px;
     position: relative;
-    margin-top: 110px;
+    margin-top: clamp(80px, 100px, 120px);
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .view-more-feature::before {
@@ -592,7 +631,6 @@ body {
     color: #0C0200;
     font-size: 36px;
     font-weight: 700;
-    padding-top: 60px;
 }
 
 .view-more-feature p{
@@ -601,18 +639,32 @@ body {
     font-weight: 400;
 }
 
+@media (max-width: 1193px) {
+    .view-more-feature {
+        padding: 40px 20px;
+        margin-left: 4px;
+        margin-right: 4px;
+
+    }
+}
+
 /* unlock power */
 .unlock-power{
     background-image: url('/img/bg-unlock-power.png');
     background-size: cover;
     background-position: center;
     margin-top: 80px;
-    padding: 100px 0;
+    padding: clamp(50px , 55px, 60px) 0;
+}
+
+.img-unlock-power{
+    width: 100%;
+    height: auto;
 }
 
 .unlock-power h4{
     color: #FFFFFF;
-    font-size: 36px;
+    font-size: clamp(30px, 32px, 36px);
     font-weight: 700;
 }
 
@@ -627,18 +679,16 @@ body {
     margin-top: 60px;
     align-items: center;
     justify-content: center;
-    padding-left: 170px;
 }
 
 .content-visitorID{
     gap: 16px;
-    padding-left: 95px;
-    padding-right: 90px;
+
 }
 
 .content-visitorID h4{
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: clamp(26px, 3vw, 30px);
     font-weight: 700;
 }
 
@@ -655,17 +705,21 @@ body {
     margin-top: 40px;
 }
 
+.visitorID-work h4{
+    color: #FFFFFF;
+    font-size: clamp(26px, 3vw, 30px);
+    font-weight: 700;
+}
+
 .list-answer{
     font-size: 15px;
     color: #FFFFFF;
 }
 
-.content-vtID-work{
-    padding-top: 48px;
-}
-
-.with-without-visitorID{
-    margin-top: 100px;
+.with-without-visitorID, 
+.QA-visitorID,
+.visitorID-work{
+    margin-top: clamp(50px, 70px, 90px);
 }
 
 .answer-without-vtID h5{
@@ -682,14 +736,18 @@ body {
     line-height: 130%;
 }
 
-.content-without-vtID{
-    padding-left: 80px;
-}
-
 .content-without-vtID h4{
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: clamp(26px, 3vw, 30px);
     font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .content-vtID-work,
+    .content-visitorID,
+    .content-without-vtID{
+        margin-top: 20px;
+    }
 }
 
 /* platform section */
@@ -754,6 +812,8 @@ body {
     padding-top: 20px;
     position: relative;
     background: linear-gradient(180deg, #FDFBFB 0%, #F7EEED 100%);
+    overflow: hidden;
+    
 }
 
 .explore-for-shopify::before {
@@ -792,22 +852,31 @@ body {
     gap: 10px;
 }
 
+.icon-4apps img{
+    width: 30px;
+    height: 30px;
+}
+
+
 /* security dashboard section */
+.security-dashboard-section{
+    margin-top: clamp(80px, 100px, 120px);
+}
 .content-security-dashboard h4{
-    font-size: 36px;
+    font-size: clamp(30px, 3vw, 36px);
     font-weight: 700;
     color: #0C0200;
 }
 
 .content-security-dashboard p{
-    font-size: 20px;
+    font-size: clamp(18px, 3vw, 20px);
     font-weight: 400;
     color: #4D4D4D;
     line-height: 130%;
 }
 
-.security-dashboard{
-    padding-left: 80px;
+.list-benifit{
+    padding-top: 16px;
 }
 
 .text-benifit{
@@ -880,9 +949,10 @@ body {
         .stat-label {
             color: #575757;
             font-size: 13px;
+            font-weight: 500;
         }
         .stat-value {
-            font-size: 26px;
+            font-size: 30px;
             font-weight: 700;
             color: #1a1a1a;
             &.stat-active {
@@ -896,9 +966,20 @@ body {
         }
         .stat-sub {
             color: #575757;
-            font-size: 12px;
+            font-size: 13px;
+            font-weight: 500;
         }
     }
+
+@media (max-width: 767px) {
+    .security-dashboard{
+        margin-top: 50px;
+    }
+
+    .list-benifit{
+        padding-top: 4px;
+    }
+}
 
 /* chart */
 .traffic-overview{
@@ -1122,6 +1203,7 @@ body {
     background-size: 32px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
 }
  
 .visits-slider::-webkit-slider-thumb:hover {
@@ -1568,14 +1650,13 @@ body {
 /* protection */
  .protection{
     border: 1px solid #EAE3E1;
-    border-radius: 50px;
-    padding: 10px 10px 10px 6%;
     box-shadow: 0px 7px 5px 0px #EAE3E133;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 120px;
     margin-bottom: 100px;
+    flex-direction: column;
  }
 
  .title-protection{
@@ -1583,5 +1664,26 @@ body {
     font-weight: 700;
     color: #0C0200;
  }
+
+ .protection img{
+    width: 100%;
+    height: auto;
+    max-width: 572px;
+ }
+
+@media (min-width: 992px) {
+    .protection {
+        border-radius: 50px;
+        padding: 10px 10px 10px 6%;
+    }
+}
+
+@media (min-width: 768px) {
+    .protection {
+        flex-direction: row;
+        padding: 10px 10px 10px 4%;
+        padding: 15px 15px 15px 60px;
+    }
+}
 
  

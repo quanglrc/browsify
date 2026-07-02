@@ -335,75 +335,77 @@ block content
                             span View Details
                         a.btn.btn-configure-rules.ms-2(href="")
                             span Configure Rules
-    .pricing-section.containerr
-        .pricing-header.text-center
-            h4 Plan that tailored to your need
-            p.text-muted Based on the request
+    //- Pricing section
+    .containerr.px-3
+        .pricing-section
+            .pricing-header.text-center
+                h4 Plan that tailored to your need
+                p.text-muted Based on the request
 
-        //- Toggle Annually / Monthly
-        .billing-toggle.d-flex.justify-content-center.align-items-center.mt-3
-            .toggle-wrapper
-                input#billingToggle(type="checkbox" checked)
-                label.toggle-label(for="billingToggle")
-                    span.toggle-option.annually Annually
-                        span.badge-save Save up to 30%
-                    span.toggle-option.monthly Monthly
-        //- Slider visits
-        .slider-section.mt-4
-            .slider-wrapper
-                input#visitsSlider.visits-slider(
-                    type="range"
-                    min="0"
-                    max="6"
-                    value="1"
-                    step="1"
-                )   
-                .slider-labels.mt-2
-                    span 10K
-                    span 20K
-                    span 50K
-                    span 100K
-                    span 200K
-                    span 500K
-                    span 1M+
-        //- Pricing card + benefits
-        .pricing-content.row.mt-5.align-items-start
-            .col-lg-7
-                .pricing-card
-                    .badge-billing Annually with 30% OFF
-                    .price-display.mt-3
-                        span.price-amount $29
-                        span.price-period /mo.
-                    p.price-desc.mt-3 An amount of $348 will be charged immediately and subsequently every 12 months. Additional taxes may apply based on your local tax regulations.
-                    a.btn-start-trial.mt-3(href="")
-                        span Start Free trial
-            .col-lg-5
-                .benefits-section
-                    p.benefits-title Benefit including:
-                    ul.benefits-list
-                        li
-                            img(src="/img/like-tick.svg" alt="")
-                            span Blocking Options
-                        li
-                            img(src="/img/like-tick.svg" alt="")
-                            span Auto DDoS Protection
-                        li
-                            img(src="/img/like-tick.svg" alt="")
-                            span Anti-Crawling
-                        li
-                            img(src="/img/like-tick.svg" alt="")
-                            span Data Theft Prevention
-                        li
-                            img(src="/img/like-tick.svg" alt="")
-                            span Click Fraud Protection
-                        li
-                            img(src="/img/like-tick.svg" alt="")
-                            span Threat Reports
-                    a.see-all-features(href="") See all features
-        .pricing-footer.text-center.mt-4
-            p.text-muted Complete your payment through the platform, or contact<br>
-                a.text-highlight(href="") our support
-                |  for a custom plan.
+            //- Toggle Annually / Monthly
+            .billing-toggle.d-flex.justify-content-center.align-items-center.mt-3
+                .toggle-wrapper
+                    input#billingToggle(type="checkbox" checked)
+                    label.toggle-label(for="billingToggle")
+                        span.toggle-option.annually Annually
+                            span.badge-save Save up to 30%
+                        span.toggle-option.monthly Monthly
+            //- Slider visits
+            .slider-section.mt-4
+                .slider-wrapper
+                    input#visitsSlider.visits-slider(
+                        type="range"
+                        min="0"
+                        max="6"
+                        value="1"
+                        step="1"
+                    ) 
+                    .slider-labels.mt-2
+                        span 10K
+                        span 20K
+                        span 50K
+                        span 100K
+                        span 200K
+                        span 500K
+                        span 1M+
+            //- Pricing card + benefits
+            .pricing-content.row.p-4
+                .col-xsm12.col-sm-7.col-md-7.col-lg-7
+                    .pricing-card
+                        .badge-billing Annually with 30% OFF
+                        .price-display.mt-3
+                            span.price-amount $29
+                            span.price-period /mo.
+                        p.price-desc.mt-3 An amount of $348 will be charged immediately and subsequently every 12 months. Additional taxes may apply based on your local tax regulations.
+                        a.btn-start-trial.mt-3(href="")
+                            span Start Free trial
+                .col-xsm12.col-sm-5.col-md-5.col-lg-5
+                    .benefits-section
+                        p.benefits-title Benefit including:
+                        ul.benefits-list
+                            li
+                                img(src="/img/like-tick.svg" alt="")
+                                span Blocking Options
+                            li
+                                img(src="/img/like-tick.svg" alt="")
+                                span Auto DDoS Protection
+                            li
+                                img(src="/img/like-tick.svg" alt="")
+                                span Anti-Crawling
+                            li
+                                img(src="/img/like-tick.svg" alt="")
+                                span Data Theft Prevention
+                            li
+                                img(src="/img/like-tick.svg" alt="")
+                                span Click Fraud Protection
+                            li
+                                img(src="/img/like-tick.svg" alt="")
+                                span Threat Reports
+                        a.see-all-features(href="") See all features
+            .pricing-footer.text-center.mt-4
+                p.text-muted Complete your payment through the platform, or contact<br>
+                    a.text-highlight(href="") our support
+                    |  for a custom plan.
 
     //- Enterprise accordion
     .enterprise-accordion.containerr.mt-3
@@ -589,15 +591,16 @@ block content
                                 span.name-reviewer Olivia K.
                                 .desc Skincare & Beauty Store
                         span.star ★★★★★
-    .protection.containerr
-        .div
-            h2.title-protection Shield Your Website,<br> Secure Your Future.
-            .group-btns.d-flex.pt-3
-                a.btn-getStarted.text-decoration-none(href="") 
-                    span Get started for free
-                a.btn-requestDemo.ms-3.text-decoration-none(href="") 
-                    span Request a demo
-        img(src="/img/img-hero-section.svg", alt="")
+    .containerr
+        .protection
+            .div
+                h2.title-protection Shield Your Website,<br> Secure Your Future.
+                .group-btns.d-flex.pt-3
+                    a.btn-getStarted.text-decoration-none(href="") 
+                        span Get started for free
+                    a.btn-requestDemo.ms-3.text-decoration-none(href="") 
+                        span Request a demo
+            img(src="/img/img-hero-section.svg", alt="")
     
     
     
